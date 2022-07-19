@@ -102,7 +102,7 @@ public class TasksTest {
     private WebDriver getWebDriver() throws MalformedURLException {
         ChromeOptions chromeOptions = new ChromeOptions();
         WebDriver driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), chromeOptions);
-        driver.navigate().to("http://192.168.0.105:8001/tasks");
+        driver.navigate().to("http://192.168.20.72:8001/tasks");
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         return driver;
     }
